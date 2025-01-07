@@ -1,0 +1,54 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.cer",
+          "storePassword": "0000001BCA726D43F12AF2223548398920CB35983304455A5B9A71BB115BE5582739829949930D4C1156C7",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B637DD6EA707A70FF566209D3A6D0BF2D5A347F558E20D2DA52C2C939106C756C31B77D136169FB",
+          "profile": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

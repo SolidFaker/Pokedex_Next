@@ -1,0 +1,19 @@
+{
+  "routerMap": [
+    {
+      "name": "PokemonDetails",
+      "pageSourceFile": "src/main/ets/pages/view/PokemonDetails.ets",
+      "buildFunction": "PokemonDetailsBuilder"
+    },
+    {
+      "name": "AbilityDetails",
+      "pageSourceFile": "src/main/ets/pages/view/AbilityDetails.ets",
+      "buildFunction": "AbilityDetailsBuilder"
+    },
+    {
+      "name": "SkillDetails",
+      "pageSourceFile": "src/main/ets/pages/view/SkillDetails.ets",
+      "buildFunction": "SkillDetailsBuilder"
+    }
+  ]
+}
