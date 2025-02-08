@@ -4,25 +4,24 @@ import { SlidingTabController, SlidingTabsV2 } from '@xqw/sliding-tabs'
 import PokemonList from './view/PokemonList'
 import SkillList from './view/SkillList'
 import AbilityList from './view/AbilityList'
+import DefenseCalc from './view/DefenseCalc'
 
 @Entry
 @ComponentV2
 struct Index {
   @Provider() pageStack: NavPathStack = new NavPathStack()
   @Local windowInfo: WindowInfo = AppStorageV2.connect(WindowInfo, () => new WindowInfo(0, 0, 0, 0))!
-  @Local tabs: string[] = ["图鉴", "技能", "特性"]
+  @Local tabs: string[] = ["图鉴", "技能", "特性", "克制"]
   tabController: SlidingTabController = new SlidingTabController()
 
   build() {
     Navigation(this.pageStack) {
       Column() {
         Swiper(this.tabController.swiperController) {
-          PokemonList()
-            .width('100%').height('100%')
-          SkillList()
-            .width('100%').height('100%')
-          AbilityList()
-            .width('100%').height('100%')
+          PokemonList().width('100%').height('100%')
+          SkillList().width('100%').height('100%')
+          AbilityList().width('100%').height('100%')
+          DefenseCalc().width('100%').height('100%')
         }
         .indicator(false)
         .loop(false)
