@@ -51,13 +51,13 @@ export default struct SkillList {
                   }
                   .width('100%')
                   .margin({ top: 5 })
-                }.width('90%')
+                }.width('70%')
 
                 Row() {
                   Text(`#${s.index}`).fontSize(14)
                 }
                 .height('100%')
-                .width('20%')
+                .width('30%')
                 .layoutWeight(1)
                 .reverse(true)
               }

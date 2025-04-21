@@ -13,7 +13,7 @@ export default struct InfoCard {
 
       Text(this.name)
         .fontSize(16)
-        .textOverflow({ overflow: TextOverflow.MARQUEE })
+        .textOverflow({ overflow: this.cardHeight === 'auto' ? TextOverflow.None : TextOverflow.MARQUEE })
     }
     .width(this.cardWidth)
     .height(this.cardHeight)
