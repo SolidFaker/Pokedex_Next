@@ -19,7 +19,7 @@ export default struct DefenseCalc {
 
   build() {
     Column() {
-      Row() {
+      Column({ space: 10 }) {
         Row() {
           Text('第一属性：')
           Select(this.buildSelectOptions())
@@ -58,6 +58,7 @@ export default struct DefenseCalc {
         }
         .width('50%')
       }
+      .alignItems(HorizontalAlign.Start)
       .width('100%')
 
       ForEach(this.effectKeys, (k: number) => {

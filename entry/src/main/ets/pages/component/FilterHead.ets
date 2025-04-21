@@ -35,7 +35,8 @@ export default struct FilterHead {
         Row() {
           SymbolGlyph($r('sys.symbol.dot_grid_2x2'))
             .fontWeight(FontWeight.Normal)
-            .fontSize(35)
+            .fontSize(30)
+            .margin(5)
         }.reverse(true)
       }
       .buttonStyle(ButtonStyleMode.TEXTUAL)

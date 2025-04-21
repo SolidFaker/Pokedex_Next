@@ -13,6 +13,7 @@ export default struct InfoCard {
 
       Text(this.name)
         .fontSize(16)
+        .textOverflow({ overflow: TextOverflow.MARQUEE })
     }
     .width(this.cardWidth)
     .height(this.cardHeight)

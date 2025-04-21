@@ -82,7 +82,7 @@ export default struct PokemonList {
         }
         .width('100%')
         .height('100%')
-        .scrollBar(BarState.Off)
+        .scrollBar(BarState.Auto)
       }
       .width('100%')
       .height('100%')

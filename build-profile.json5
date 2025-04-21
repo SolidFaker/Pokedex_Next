@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.cer",
-          "storePassword": "0000001BCA726D43F12AF2223548398920CB35983304455A5B9A71BB115BE5582739829949930D4C1156C7",
+          "certpath": "C:\\Users\\Enbin\\.ohos\\config\\default_Pokedex_Next_moCwC1S7iXgASy83I453i_NzRgaiJUW7ZXUSc3voGQE=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B637DD6EA707A70FF566209D3A6D0BF2D5A347F558E20D2DA52C2C939106C756C31B77D136169FB",
-          "profile": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.p7b",
+          "keyPassword": "0000001B67B994CA178D1B1E384647F9FD2E2436F6113D9AA0F4EB57C1954D315CFC31733A181E02327A29",
+          "profile": "C:\\Users\\Enbin\\.ohos\\config\\default_Pokedex_Next_moCwC1S7iXgASy83I453i_NzRgaiJUW7ZXUSc3voGQE=.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/luxcis/.ohos/config/default_Pokedex_X-9DDZmUWCn-M3FF3dARNr-hCPkvBGjRdmXyT69-9wo=.p12"
+          "storeFile": "C:\\Users\\Enbin\\.ohos\\config\\default_Pokedex_Next_moCwC1S7iXgASy83I453i_NzRgaiJUW7ZXUSc3voGQE=.p12",
+          "storePassword": "0000001B456101935D43544C06424E333315B7B069218AAE4A99B276F53128CF34ADA68E670952038E0628"
         }
       }
     ],
@@ -19,7 +19,7 @@
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": "5.0.2(14)",
+        "compatibleSdkVersion": "5.0.4(16)",
         "runtimeOS": "HarmonyOS",
         "buildOption": {
           "strictMode": {

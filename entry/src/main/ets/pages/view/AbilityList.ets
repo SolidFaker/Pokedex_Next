@@ -33,13 +33,13 @@ export default struct AbilityList {
                     .minFontSize(14)
                     .heightAdaptivePolicy(TextHeightAdaptivePolicy.MIN_FONT_SIZE_FIRST)
                     .textOverflow({ overflow: TextOverflow.Ellipsis })
-                }.width('90%')
+                }.width('70%')
 
                 Row() {
                   Text(`#${a.index}`).fontSize(14)
                 }
                 .height('100%')
-                .width('20%')
+                .width('30%')
                 .layoutWeight(1)
                 .reverse(true)
               }
@@ -58,7 +58,7 @@ export default struct AbilityList {
         }
         .width('100%')
         .height('100%')
-        .scrollBar(BarState.Off)
+        .scrollBar(BarState.Auto)
       }
       .width('100%')
       .height('100%')

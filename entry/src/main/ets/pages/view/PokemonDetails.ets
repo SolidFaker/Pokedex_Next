@@ -39,7 +39,7 @@ export default struct PokemonDetails {
   configArr: Array<MCollapseType.CollapseOptions> = []
 
   aboutToAppear(): void {
-    PokeUtil.getPokemonDetail(this.pokemon.index, this.pokemon.name).then(res => {
+    PokeUtil.getPokemonDetail(this.pokemon.index, this.pokemon.name.split('-')[0]).then(res => {
       this.detail = res
       this.formTab = res.forms.map(f => f.name)
       this.statTab = res.stats.map(s => s.form)
@@ -80,7 +80,7 @@ export default struct PokemonDetails {
           titleBarColor: Color.White,
           statusBarColor: Color.White,
           centerType: TitleType.TEXT,
-          centerText: this.pokemon.name,
+          centerText: this.pokemon.name.split('-')[0],
           leftBackType: BackType.NONE,
           leftOnClick: () => {
             this.pageStack.pop()
@@ -196,7 +196,7 @@ export default struct PokemonDetails {
                     InfoCard({
                       title: `${ability.name}${ability.is_hidden ? '(隐藏)' : ''}`,
                       name: this.abilities.filter(a => a.name === ability.name)[0].text,
-                      cardWidth: 'auto',
+                      cardWidth: '100%',
                       cardHeight: 'auto'
                     }).onClick(() => {
                       PokeUtil.getAbilityList().then(res => {
